@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <!--Reference 引用某个程序集-->
+  <!--PackageReference 引用某个Nuget包-->
+  <!--Compile 常用的c# 编译-->
+  <!--ProjectReference 引用某个项目-->
+  <!--指定集合的地方 ItemGroup-->
+  <ItemGroup>
+    <None Remove="BTCusSetting.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BTCusSetting.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
+

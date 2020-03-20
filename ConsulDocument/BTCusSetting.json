@@ -1,0 +1,25 @@
+
+  {
+    "connectionString": [
+      {
+
+        "dbType": "System.Data.SqlClient",
+        "name": "MainData.Reader",
+        "value": "Min Pool Size=10;Max Pool Size=500;Connection Timeout=50;Data Source=192.168.100.140,14033;Initial Catalog=BT_ApiDocument;Persist Security Info=True;User ID=btm;Password=Rl123456"
+      },
+      {
+
+        "dbType": "System.Data.SqlClient",
+        "name": "MainData.Writer",
+        "value": "Min Pool Size=10;Max Pool Size=500;Connection Timeout=50;Data Source=192.168.100.140,14033;Initial Catalog=BT_ApiDocument;Persist Security Info=True;User ID=btm;Password=Rl123456"
+      }
+
+    ],
+    "AppSettings": {
+      "DLLName": "AspNetCoreDocument.dll",
+      "ProjectName": "AspNetCoreDocument",
+      "BaseUrl": "http://192.168.129.230:5167",
+      "BaseReroute": "AspNetCoreDocument"
+    }
+  }
+
