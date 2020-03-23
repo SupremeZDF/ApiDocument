@@ -16,5 +16,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BT.Manage.Attribute.NetCore\BT.Manage.Attribute.NetCore.csproj" />
+  </ItemGroup>
+
 
 </Project>

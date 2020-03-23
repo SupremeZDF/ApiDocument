@@ -18,5 +18,9 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetCoreDocument\AspNetCoreDocument.csproj" />
+    <ProjectReference Include="..\BT.Manage.Document.NetCore\BT.Manage.Document.NetCore.csproj" />
+  </ItemGroup>
 </Project>
 

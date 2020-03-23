@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.0.6</AssemblyVersion>
+    <FileVersion>1.0.0.6</FileVersion>
+    <Version>1.0.0.6</Version>
+    <PackageId>BT.Manage.Attribute.NetCore</PackageId>
+  </PropertyGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="del &quot;$(ProjectDir)bin\Debug\*.nupkg&quot;&#xD;&#xA;if not exist &quot;$(ProjectDir)\bin\Debug\NuGet.exe&quot; copy &quot;$(SolutionDir)NuGet.exe&quot; &quot;$(ProjectDir)\bin\Debug&quot;" />
+  </Target>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BT.Manage.Core.NetCore\BT.Manage.Core.NetCore.csproj" />
+    <ProjectReference Include="..\BT.Manage.Frame.Base.NetCore\BT.Manage.Frame.Base.NetCore.csproj" />
+  </ItemGroup>
+
+</Project>

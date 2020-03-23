@@ -3,11 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDocument", "ApiDocument\ApiDocument.csproj", "{89811F86-0B4C-4B6E-8E60-8A61CDAFE5D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDocument", "ApiDocument\ApiDocument.csproj", "{89811F86-0B4C-4B6E-8E60-8A61CDAFE5D4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDocument", "AspNetCoreDocument\AspNetCoreDocument.csproj", "{6CAFCD2A-6CE1-4E7D-9BAC-919AE7F4A54B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsulDocument", "ConsulDocument\ConsulDocument.csproj", "{DCBBFA9F-5D4F-49E5-B230-EB6B6263BE2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BT.Manage.Document.NetCore", "BT.Manage.Document.NetCore\BT.Manage.Document.NetCore.csproj", "{EB862FE1-8268-4D7C-BBA2-F8DC5E40308B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BT.Manage.Attribute.NetCore", "BT.Manage.Attribute.NetCore\BT.Manage.Attribute.NetCore.csproj", "{02347454-D266-48D5-936D-02D99DD8282E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BT.Manage.Core.NetCore", "BT.Manage.Core.NetCore\BT.Manage.Core.NetCore.csproj", "{A8CF5946-C2B7-40BC-B3D9-0DB67C2E0A82}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BT.Manage.Frame.Base.NetCore", "BT.Manage.Frame.Base.NetCore\BT.Manage.Frame.Base.NetCore.csproj", "{C49F9315-00B6-4CBF-AE4E-B8EC188769F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BT.Manage.Tools.NetCore", "BT.Manage.Tools.NetCore\BT.Manage.Tools.NetCore.csproj", "{3F378DAA-21FB-48BC-9799-D5D2CCD80132}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +37,26 @@ Global
 		{DCBBFA9F-5D4F-49E5-B230-EB6B6263BE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCBBFA9F-5D4F-49E5-B230-EB6B6263BE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCBBFA9F-5D4F-49E5-B230-EB6B6263BE2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB862FE1-8268-4D7C-BBA2-F8DC5E40308B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB862FE1-8268-4D7C-BBA2-F8DC5E40308B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB862FE1-8268-4D7C-BBA2-F8DC5E40308B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB862FE1-8268-4D7C-BBA2-F8DC5E40308B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02347454-D266-48D5-936D-02D99DD8282E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02347454-D266-48D5-936D-02D99DD8282E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02347454-D266-48D5-936D-02D99DD8282E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02347454-D266-48D5-936D-02D99DD8282E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CF5946-C2B7-40BC-B3D9-0DB67C2E0A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CF5946-C2B7-40BC-B3D9-0DB67C2E0A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CF5946-C2B7-40BC-B3D9-0DB67C2E0A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CF5946-C2B7-40BC-B3D9-0DB67C2E0A82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C49F9315-00B6-4CBF-AE4E-B8EC188769F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C49F9315-00B6-4CBF-AE4E-B8EC188769F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C49F9315-00B6-4CBF-AE4E-B8EC188769F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C49F9315-00B6-4CBF-AE4E-B8EC188769F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F378DAA-21FB-48BC-9799-D5D2CCD80132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F378DAA-21FB-48BC-9799-D5D2CCD80132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F378DAA-21FB-48BC-9799-D5D2CCD80132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F378DAA-21FB-48BC-9799-D5D2CCD80132}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
