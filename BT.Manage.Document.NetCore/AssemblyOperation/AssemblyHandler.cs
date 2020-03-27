@@ -21,6 +21,8 @@ namespace BT.Manage.Document.AssemblyOperation
 
         string basePath = PlatformServices.Default.Application.ApplicationBasePath;
 
+
+
         string systemPath = AppDomain.CurrentDomain.BaseDirectory;
 
         public void GetApiDetialInfo(AssemblyResult result)
@@ -96,7 +98,7 @@ namespace BT.Manage.Document.AssemblyOperation
                             Type type = assembly.GetType(item.FullName, true, true);
                             if (type != null)
                             {
-                                //类的方法   DeclaringType 获取声明此成员的类的对象。
+                                //类的方法   DeclaringType 获取声明此成员的类的对象。  
                                 MethodInfo[] methodinfos = type.GetMethods().Where(o => o.DeclaringType.Name.ToLower() == item.ClassName.ToLower()).ToArray();
                                 foreach (MethodInfo m in methodinfos)
                                 {
@@ -105,13 +107,14 @@ namespace BT.Manage.Document.AssemblyOperation
                                         AssemblyMethodInfo method = new AssemblyMethodInfo();
                                         method.MethodName = m.Name;
                                         //获取是否token验证
-                                        //判断是否token验证
+                                        //判断是否token验证 获取所有特性
                                         var attrs = m.GetCustomAttributes();
-                                        foreach (var i in attrs) 
-                                        {
-                                            var TypeName = i.GetType().Name;
-                                            var BaseName = i.GetType().BaseType.Name;
-                                        }
+                                        //foreach (var i in attrs) 
+                                        //{
+                                        //    var TypeName = i.GetType().Name;
+                                        //    var BaseName = i.GetType().BaseType.Name;
+                                        //}
+                                        //获取
                                         var count = attrs.Count(o => o.GetType().Name == "BtAppAuthorize" || o.GetType().BaseType.Name == "BtAuthorize");
                                         if (count > 0)
                                         {

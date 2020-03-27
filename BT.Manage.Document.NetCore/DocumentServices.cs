@@ -60,9 +60,9 @@ namespace BT.Manage.Document
                                  DELETE FROM  d_DtoFiledInfo WHERE  FID NOT IN(
                                  SELECT  FID FROM d_MethodInfo WHERE  FProId = '" + ProId + @"' AND  FConId = '" + guid.ToString() + @"'
                                  )
-                                AND FProId = '" + ProId + "'  AND FAddTime<'" + DateTime.Now.ToString()+"'";
+                                AND FProId = '" + ProId + "'  AND FAddTime<'" + DateTime.Now.ToString() + "'";
             db.Excut(deletefiledsql, null).Submit();
-            
+
             List<BaseQuery> listq = new List<BaseQuery>();
             //写入控制器信息
             foreach (var item in result.ClassList)
@@ -159,9 +159,6 @@ namespace BT.Manage.Document
                     Guid conid;
                     if (string.IsNullOrEmpty(forcontroller.FControllerName))
                     {
-
-
-
                         //创建控制器
                         try
                         {
@@ -222,7 +219,8 @@ namespace BT.Manage.Document
 
             listq.Add(query);
             var dbs = db.dbscope();
-            var bl = dbs.dotrancation((lists, models) => {
+            var bl = dbs.dotrancation((lists, models) =>
+            {
                 listq.AddInScope(lists);
 
             }).Submit();
@@ -230,8 +228,6 @@ namespace BT.Manage.Document
             {
                 throw dbs.exception;
             }
-
-
         }
     }
 }

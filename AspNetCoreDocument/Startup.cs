@@ -29,6 +29,8 @@ namespace AspNetCoreDocument
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+
             services.AddSwaggerGen((c)=> 
             {
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo()

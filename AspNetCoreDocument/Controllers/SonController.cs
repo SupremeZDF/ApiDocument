@@ -16,11 +16,19 @@ namespace AspNetCoreDocument.Controllers
         /// oneGet
         /// </summary>
         /// <returns></returns>
-        [HttpGet]
-        [BTMethodDescibe(Decription ="oneGet",FrameForwardService ="api",InParam =typeof(OneClass),OutParam =typeof(TwoClass))]
-        public string oneGet() 
+
+        [Route("")]
+        //[ActionName("")]
+        [AcceptVerbs("get", "set")]
+        [HttpPost]
+        [BTMethodDescibe(Decription ="练习One",FrameForwardService ="api",InParam =typeof(OneClass),OutParam =typeof(TwoClass))]
+        public TwoClass oneGet([FromBody] OneClass oneClass) 
         {
-            return "2";
+            return new TwoClass() 
+            {
+                Name="123",
+                pswd="123"
+            };
         }
 
         /// <summary>
@@ -28,10 +36,14 @@ namespace AspNetCoreDocument.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        [BTMethodDescibe(Decription = "onePost", FrameForwardService = "api", InParam = typeof(OneClass), OutParam = typeof(TwoClass))]
-        public string onePost() 
+        [BTMethodDescibe(Decription = "练习 Two", FrameForwardService = "api", InParam = typeof(OneClass), OutParam = typeof(TwoClass))]
+        public TwoClass onePost([FromBody] OneClass oneClass) 
         {
-            return "1";
+            return new TwoClass()
+            {
+                Name = "123",
+                pswd = "123"
+            };
         }
 
     }

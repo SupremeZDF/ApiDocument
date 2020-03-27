@@ -12,8 +12,8 @@ namespace AspNetCoreDocument
         /// 客户姓名
         /// </summary>
         [BTDisplay(ParaName ="客户姓名")]
-        [BTRequired(AllowStringEmpty =false,Message ="请输出客户姓名")]
-       public string Name { get; set; }
+        [BTRequired(AllowStringEmpty = false, Message = "请输出客户姓名")]
+        public string Name { get; set; }
 
         /// <summary>
         /// 授权ID
