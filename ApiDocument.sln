@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consolo.Reflection", "Conso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetFrameWork.WebApi", "AspNetFrameWork.WebApi\AspNetFrameWork.WebApi.csproj", "{374915A8-17E5-475D-88ED-FB86C3DC6F3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZJPayMentAspNerCore", "ZJPayMentAspNerCore\ZJPayMentAspNerCore.csproj", "{6E0FADFC-36BF-4748-8730-04640486E323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZJPayMentAspNerCore", "ZJPayMentAspNerCore\ZJPayMentAspNerCore.csproj", "{6E0FADFC-36BF-4748-8730-04640486E323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZJPayMentAspNetWebFrom", "ZJPayMentAspNetWebFrom\ZJPayMentAspNetWebFrom.csproj", "{3B0B9187-0817-470A-B365-4BB39492AD4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{6E0FADFC-36BF-4748-8730-04640486E323}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E0FADFC-36BF-4748-8730-04640486E323}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E0FADFC-36BF-4748-8730-04640486E323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B0B9187-0817-470A-B365-4BB39492AD4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B0B9187-0817-470A-B365-4BB39492AD4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B0B9187-0817-470A-B365-4BB39492AD4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B0B9187-0817-470A-B365-4BB39492AD4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +108,7 @@ Global
 		{97A55CAF-B649-4AF0-9342-45920205403A} = {96F1B21B-3630-471A-9C15-D286EC853FBE}
 		{374915A8-17E5-475D-88ED-FB86C3DC6F3F} = {96F1B21B-3630-471A-9C15-D286EC853FBE}
 		{6E0FADFC-36BF-4748-8730-04640486E323} = {96F1B21B-3630-471A-9C15-D286EC853FBE}
+		{3B0B9187-0817-470A-B365-4BB39492AD4E} = {96F1B21B-3630-471A-9C15-D286EC853FBE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5773A580-F1BD-414E-9A92-A8F4CF244674}
