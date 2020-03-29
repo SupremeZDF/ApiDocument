@@ -14,6 +14,7 @@ using Swashbuckle.AspNetCore.SwaggerUI;
 using Swashbuckle.AspNetCore;
 using Microsoft.Extensions.PlatformAbstractions;
 using System.IO;
+using ZJ_Interface;
 
 namespace ZJPayMentAspNerCore
 {
@@ -31,6 +32,7 @@ namespace ZJPayMentAspNerCore
         {
             services.AddControllers();
 
+            services.AddTransient<InterFace2501, ComeTrue2501Class>();
 
             services.AddSwaggerGen((c) =>
             {

@@ -1,0 +1,7 @@
+{
+  "payment.config.path": "F:\\公司项目\\OneApiPort\\Projects\\ZJPayMentAspNerCore\\config",
+  "AppSetting": {
+    "InstitutionID": "000020" //机构编号
+  }
+}
+

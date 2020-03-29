@@ -12,7 +12,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZJPayMent.DAL\ZJPayMent.DAL.csproj" />
+    <ProjectReference Include="..\ZJ_Interface\ZJ_Interface.csproj" />
   </ItemGroup>
 
   <ItemGroup>

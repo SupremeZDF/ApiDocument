@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="del &quot;$(ProjectDir)bin\Debug\*.nupkg&quot;&#xD;&#xA;if not exist &quot;$(ProjectDir)\bin\Debug\NuGet.exe&quot; copy &quot;$(SolutionDir)NuGet.exe&quot; &quot;$(ProjectDir)\bin\Debug&quot;" />
+    <!--<Exec Command="del &quot;$(ProjectDir)bin\Debug\*.nupkg&quot;&#xD;&#xA;if not exist &quot;$(ProjectDir)\bin\Debug\NuGet.exe&quot; copy &quot;$(SolutionDir)NuGet.exe&quot; &quot;$(ProjectDir)\bin\Debug&quot;" />-->
   </Target>
 
 </Project>

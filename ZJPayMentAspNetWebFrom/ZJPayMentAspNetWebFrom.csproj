@@ -45,7 +45,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CFCA.Payment">
-      <HintPath>..\ZJPayMentAspNerCore\bin\Debug\netcoreapp3.1\CFCA.Payment.dll</HintPath>
+      <HintPath>..\..\接口规范及Demo\40-C#版API,示例程序,配置参数\10-开发依赖包\CFCA.Payment.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -163,6 +163,7 @@
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
     <Content Include="OneDemo\Tx1111.ashx" />
+    <Content Include="Web1.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PaymentConfig>
+
+	<!--机构的签名证书和口令-->
+	<MyKeystoreFilename>test.pfx</MyKeystoreFilename>
+	<MyKeystorePassword>cfca1234</MyKeystorePassword>
+	
+	<!--支付平台的公钥证书-->
+	<PaymentCertificateFilename>paytest.cer</PaymentCertificateFilename>
+	
+	<!--支付平台支付接口地址-->
+	<PaymentUrl>https://test.cpcn.com.cn/Gateway/InterfaceI</PaymentUrl>
+	
+	<!--支付平台交易接口地址-->
+	<TxUrl>https://test.cpcn.com.cn/Gateway/InterfaceII</TxUrl>
+	
+	<!--支付平台小文件上传接口地址-->
+	<Gateway4fileUrl>https://test.cpcn.com.cn/Gateway4File/InterfaceII</Gateway4fileUrl>
+	
+	<!--支付平台支付接口地址-->
+	<CmbPaymentUrl>https://test.cpcn.com.cn/Gateway4cmbchina/InterfaceI</CmbPaymentUrl>
+	
+	<!--支付平台交易接口地址-->
+	<CmbTxUrl>https://test.cpcn.com.cn/Gateway4cmbchina/InterfaceII</CmbTxUrl>
+	
+	<!--支付平台支付接口地址-->
+	<PaymentUserPaymentUrl>https://test.cpcn.com.cn/Gateway4PaymentUser/InterfaceI</PaymentUserPaymentUrl>
+	
+	<!--支付平台交易接口地址-->
+	<PaymentUserTxUrl>https://test.cpcn.com.cn/Gateway4PaymentUser/InterfaceII</PaymentUserTxUrl>
+	
+	<!--徽商定制化异步接口-->
+	<DepositBankPaymentUrl>https://test.cpcn.com.cn/Gateway4DepositBank/InterfaceI</DepositBankPaymentUrl>
+	
+	<!--徽商定制化同步接口-->
+	<DepositBankTxUrl>https://test.cpcn.com.cn/Gateway4DepositBank/InterfaceII</DepositBankTxUrl>
+	
+	<!--消费金融定制化异步接口-->
+	<ConsumerPaymentUrl>https://test.cpcn.com.cn/Gateway4Consumer/InterfaceI</ConsumerPaymentUrl>
+	
+	<!--消费金融定制化同步接口-->
+	<ConsumerTxUrl>https://test.cpcn.com.cn/Gateway4Consumer/InterfaceII</ConsumerTxUrl>
+	
+	<!--跨境支付交易接口地址-->
+	<CrossBorderTxUrl>https://test.cpcn.com.cn/Gateway4CB/InterfaceII</CrossBorderTxUrl>
+	
+	<!--快捷绑定前台交易接口地址-->
+	<CashierTxUrl>https://test.cpcn.com.cn/Cashier/InterfaceI</CashierTxUrl>
+	
+	<!--POS支付交易接口地址-->
+	<PosTxUrl>https://test2.cpcn.com.cn/SecurityGateway/InterfaceII</PosTxUrl>
+	
+</PaymentConfig>

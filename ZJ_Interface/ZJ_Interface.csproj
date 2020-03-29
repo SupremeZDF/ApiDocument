@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZJPayMent.DAL\ZJPayMent.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CFCA.Payment">
+      <HintPath>..\ZJPayMentAspNerCore\bin\Debug\netcoreapp3.1\CFCA.Payment.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
