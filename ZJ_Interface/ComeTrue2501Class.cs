@@ -49,7 +49,7 @@ namespace ZJ_Interface
             AccountName.InnerText = Class2501Request.AccountName;
 
             XmlElement AccountNumber = document.CreateElement("AccountNumber");
-            AccountNumber.InnerText = Class2501Request.AccountNumber;
+            AccountNumber.InnerText = Class2501Request.AccountNumber;  //ss
 
             XmlElement IdentificationType = document.CreateElement("IdentificationType");
             IdentificationType.InnerText = Class2501Request.IdentificationType;
