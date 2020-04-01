@@ -54,11 +54,11 @@ namespace ZJPayMent.DAL
         /// <summary>
         /// 信用卡有效期，格式 YYMM 绑定信用卡该项选填
         /// </summary>
-        public string ValidDate { get; set; }
+        //public string ValidDate { get; set; }
 
-        /// <summary>
-        /// 信用卡背面的末 3 位数字 绑定信用卡该项选填
-        /// </summary>
-        public string CVN2 { get; set; }
+        ///// <summary>
+        ///// 信用卡背面的末 3 位数字 绑定信用卡该项选填
+        ///// </summary>
+        //public string CVN2 { get; set; }
     }
 }

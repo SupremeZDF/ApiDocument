@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BT.Manage.Frame.Base.NetCore" Version="3.4.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ZJPayMent.DAL\ZJPayMent.DAL.csproj" />
+    <ProjectReference Include="..\ZJPayMent.Tool\ZJPayMent.Tool.csproj" />
   </ItemGroup>
 
   <ItemGroup>

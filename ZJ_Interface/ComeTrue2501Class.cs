@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using System.Text;
 using ZJPayMent.DAL;
 using CFCA.Payment.Api;
+using CFCA.Payment;
 using System.Xml;
+using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
+using ZJPayMent.Tool;
+using BT.Manage.Frame.Base;
+using RestSharp;
 
 namespace ZJ_Interface
 {
-    public class ComeTrue2501Class : TxBaseRequest, InterFace2501
+    public class ComeTrue2501Class : ZJPayMent.Tool.TxBaseRequest, InterFace2501
     {
 
         private String institutionID;
@@ -63,11 +69,11 @@ namespace ZJ_Interface
             XmlElement CardType = document.CreateElement("CardType");
             CardType.InnerText = Class2501Request.CardType;
 
-            XmlElement ValidDate = document.CreateElement("ValidDate");
-            ValidDate.InnerText = Class2501Request.ValidDate;
+            //XmlElement ValidDate = document.CreateElement("ValidDate");
+            //ValidDate.InnerText = Class2501Request.ValidDate;
 
-            XmlElement CVN2 = document.CreateElement("CVN2");
-            CVN2.InnerText = Class2501Request.CVN2;
+            //XmlElement CVN2 = document.CreateElement("CVN2");
+            //CVN2.InnerText = Class2501Request.CVN2;
 
             // 组装并赋值
             //Request.SetAttribute("version", "", "2.1");
@@ -85,26 +91,73 @@ namespace ZJ_Interface
             Body.AppendChild(IdentificationNumber);
             Body.AppendChild(PhoneNumber);
             Body.AppendChild(CardType);
-            Body.AppendChild(ValidDate);
-            Body.AppendChild(CVN2);
+            //Body.AppendChild(ValidDate);
+            //Body.AppendChild(CVN2);
             //InstitutionID.AppendChild(document.CreateTextNode(this.institutionID));
             //Body.AppendChild(PaymentNo);
             //PaymentNo.AppendChild(document.CreateTextNode(this.paymentNo));
             // 产生交易发送所需数据 
+            //string cert = "D:/学习/练习Excitens/UploadDocument/ApiDocument/ZJPayMentAspNerCore/config/paytest.cer";
+            //SignatureUtils.InitVerify(cert);
+
+            //try
+            //{
+            //    X509Certificate2 x509Certificate = new X509Certificate2(cert);
+            //    string xmlString = x509Certificate.PublicKey.Key.ToXmlString(false);
+            //    RSACryptoServiceProvider rsacryptoServiceProvider = new RSACryptoServiceProvider();
+             
+            //}
+            //catch (CryptographicException ex)
+            //{
+            //    throw ex;
+            //}
+            //catch (SystemException ex2)
+            //{
+            //    throw ex2;
+            //}
+
             postProcess(document);
+
+            BaseRequest baseRequest = new BaseRequest();
+            RestRequest rest = new RestRequest(Method.POST);
+            rest.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+            rest.AddParameter("message", this.requestMessage);
+            rest.AddParameter("signature", this.requestSignature);
+            //rest.AddJsonBody(new
+            //{
+            //    message = this.requestMessage,
+            //    signature = this.requestSignature
+            //});
+            var ResResponse = baseRequest.SyncRequestByResourcePath(rest, null, "https://test.cpcn.com.cn/Gateway/InterfaceII");
+            string mesAndsing = ResResponse.@object;
+            string[] s = mesAndsing.Split(',');
+
+            Tx2501Response tx2501 = new Tx2501Response(s[0],s[1]);
+            //var resObj = Newtonsoft.Json.JsonConvert.DeserializeObject<CreditResult>(ResResponse.@object);
+            if (ResResponse.code == 1)
+            {
+                //result.code = 1;
+                //result.@object = resObj.@object;
+
+            }
         }
 
 
-        /// <summary>
+        /// <summarys
         /// 建立绑定关系
         /// </summary>
         /// <param name="Prameter2501Request"></param>
-        /// <returns></returns>
+        /// <returns></returns>Object reference not set to an instance of an object
         public Class2501Response Ruquest2501Method(Class2501Request Prameter2501Request)
         {
             this.Class2501Request = Prameter2501Request;
             process();
             return null;
+        }
+
+        public string Response2501Method()
+        {
+            return "1";
         }
     }
 }

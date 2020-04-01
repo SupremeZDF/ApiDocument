@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ZJPayMent.DAL\ZJPayMent.DAL.csproj" />
+    <ProjectReference Include="..\ZJPayMent.Tool\ZJPayMent.Tool.csproj" />
     <ProjectReference Include="..\ZJ_Interface\ZJ_Interface.csproj" />
   </ItemGroup>
 
